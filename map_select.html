@@ -37,7 +37,8 @@
       var vector = new VectorLayer({
         source: new VectorSource({
           url: 'data/geojson/counties.geojson',
-          format: new GeoJSON()
+          format: new GeoJSON(),
+          crossOrigin: 'anonymous'
         })
       });
 
